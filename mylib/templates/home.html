@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block content %}
+<html>
+    <head>
+        <style>
+
+    .btn{
+        margin: 0 9px;
+        background-color: black;
+        color:white;
+        padding:4px 13px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 16px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .btn:hover{
+        background-color: rgb(43, 64, 57);
+    }
+    
+                
+    .container button{
+        display: block;
+        margin: 16px auto;
+        padding: 17px;
+        font-size: 30px;
+        width: 403px;
+        border-radius: 10px;
+        font-family: cursive;
+
+    }
+    a{
+        
+        color:white;
+        text-decoration: none;
+        padding:34px 23px;
+    }
+
+
+        </style>
+
+    </head>
+    <body>
+        <div class="container">
+            
+            <form>
+                <button type="submit" class="btn"><a href="{% url 'bookdash'%}"> Book Dashboard</a></button><br>
+    
+                <button type="submit" class="btn"> <a href="{% url 'login'%}">Login</a></button><br>
+    
+                <button type="submit" class="btn"> <a href="{% url 'signup'%}">Sign-Up</a></button><br>
+            </form>
+        </div>
+    </body>
+</html>
+
+{% endblock content %}
